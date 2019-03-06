@@ -9,3 +9,9 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
+ $("#login-button").click(function(event){
+		 event.preventDefault();
+	 
+	 $('form').fadeOut(500);
+	 $('.wrapper').addClass('form-success');
+});
